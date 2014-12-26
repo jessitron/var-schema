@@ -5,16 +5,20 @@ Here it is, my over-lunch attempt
 
 ## Usage
 
-If I release it on Clojars, it'll be something like:
+If I release it on Clojars, it'll be:
 
-(require [jessitron/var-schema :as vs]
-         [schema.core :as s])
+    [jessitron/var-schema "0.1.0"]
 
-(def VarContainingAString (vs/Var s/String))
+And then in the code, something like:
 
-(s/defn function-that-accepts-a-var [stringvar :- VarContainingAString]
-  (println "I have metadata: " (meta stringvar))
-  (println "I contain this string: ->" (deref stringvar) "<-"))
+    (require [var-schema.core :as vs]
+             [schema.core :as s])
+
+    (def VarContainingAString (vs/Var s/String))
+
+    (s/defn function-that-accepts-a-var [stringvar :- VarContainingAString]
+      (println "I have metadata: " (meta stringvar))
+      (println "I contain this string: ->" (deref stringvar) "<-"))
 
 ## License
 
