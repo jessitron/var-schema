@@ -1,4 +1,4 @@
-(defproject var-schema "0.1.0-SNAPSHOT"
+(defproject var-schema "0.1.0"
   :description "I want a schema for a var"
   :url "http://github.com/jessitron/var-schema"
   :license {:name "Eclipse Public License"
