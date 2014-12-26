@@ -5,7 +5,7 @@ Here it is, my over-lunch attempt
 
 ## Usage
 
-If I release it on Clojars, it'll be:
+In project.clj:
 
     [jessitron/var-schema "0.1.0"]
 
