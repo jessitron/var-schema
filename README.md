@@ -14,7 +14,7 @@ And then in the code, something like:
     (require [var-schema.core :as vs]
              [schema.core :as s])
 
-    (def VarContainingAString (vs/Var s/String))
+    (def VarContainingAString (vs/Var s/Str))
 
     (s/defn function-that-accepts-a-var [stringvar :- VarContainingAString]
       (println "I have metadata: " (meta stringvar))
